@@ -31,4 +31,3 @@ app.get("/api/items", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Inventory API running on port ${PORT}`);
 });
-
