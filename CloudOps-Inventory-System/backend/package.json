@@ -1,21 +1,20 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "CloudOps Inventory API",
+  "main": "server.js",
   "scripts": {
-    "start": "app",
-    "test": "echo \"Error: no test specified\" && exit 1"
-    
+    "start": "node server.js",
+    "test": "node --test"
   },
-  
-  
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
     "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.3.1"
   }
 }
-app.get
