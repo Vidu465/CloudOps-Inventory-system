@@ -1,3 +1,4 @@
+
 name: CloudOps Inventory CI
 
 on:
@@ -22,12 +23,12 @@ jobs:
           cache-dependency-path: CloudOps-Inventory-System/backend/package-lock.json
 
       - name: Install dependencies
-        working-directory: backend
+        working-directory: CloudOps-Inventory-System/backend
         run: npm ci
 
       - name: Run automated tests
-        working-directory: backend
+        working-directory: CloudOps-Inventory-System/backend
         run: npm test
 
       - name: Build Docker image
-        run: docker build -t cloudops-inventory-api:${{ github.sha }} ./backend
+        run: docker build -t cloudops-inventory-api:${{ github.sha }} ./CloudOps-Inventory-System/backend
