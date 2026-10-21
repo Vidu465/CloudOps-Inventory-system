@@ -34,7 +34,7 @@ jobs:
       - name: Build and publish image
         uses: docker/build-push-action@v6
         with:
-          context: ./backend
+          context: ./CloudOps-Inventory-System/backend
           push: true
           tags: |
             ghcr.io/vidu465/cloudops-inventory-api:${{ github.sha }}
